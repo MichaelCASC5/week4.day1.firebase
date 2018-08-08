@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>fireMessage</title>
+
+    <!--Go to https://console.firebase.google.com-->
+    <!--Sign in and add a project "fireMessage"-->
+    <!--PASTE SNIPPET HERE-->
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyCY2qwyXJnd_yAkkxtgKh1PkO6DX4052y8",
+        authDomain: "firemessages-cdd3c.firebaseapp.com",
+        databaseURL: "https://firemessages-cdd3c.firebaseio.com",
+        projectId: "firemessages-cdd3c",
+        storageBucket: "firemessages-cdd3c.appspot.com",
+        messagingSenderId: "895757981466"
+    };
+    firebase.initializeApp(config);
+    </script>
+
+
+    <!--custom files-->
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--Add your name-->
+    <h1>Michael's Online Chat</h1>
+    <p>Enter your message and a random username will be assigned to your session</p>
+
+    <!--This div will be populated with messages-->
+    <div class="allMessages">
+        This is the beginning of chat history!
+    </div>
+    
+    <!--For user to input messages-->
+    <div class="userContainer">
+        <form>
+            <div class="inputContainer">
+                <div class="singleInput">
+                    <label for="username">Username:</label>
+                    <div id="username"></div>
+                    <!-- <input id="username" type="text"> -->
+                </div>
+                <div class="singleInput">
+                    <label for="message">Message:</label>
+                    <div></div>
+                    <input id="message" type="text">
+                    <div>
+                        <button id="submitButton">Enter</button>
+                    </div>
+                </div>
+            </div>
+            <!-- <button id="submitButton">Submit</button> -->
+        </form>
+        <div id="styleBox"></div>
+    </div>
+</body>
+</html>

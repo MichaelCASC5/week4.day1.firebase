@@ -1,0 +1,52 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    height: 80vh;
+    background: rgb(58, 57, 57);
+}
+.singleInput{
+    color: white;
+}
+.inputContainer{
+    text-align: center;
+    background: rgb(94, 92, 92);
+    width: 200px;
+    border: solid 3px rgb(77, 76, 76);
+}
+#submitButton{
+    width: 200px;
+}
+h1{
+    color: white;
+}
+.allMessages {
+    font-size: 20px;
+    color: rgb(183, 183, 255);
+    flex: 1;
+    background-color: rgb(94, 94, 94);
+    border: solid 5px rgb(114, 114, 114);
+    overflow-y: scroll;
+    margin-top: 50px;
+    /* width: 300px; */
+}
+.allMessages>p {
+    color: white;
+    margin-top: 5px;
+}
+#submitButton:hover {
+    background-color: grey;
+}
+p{
+    color: white;
+    margin: 1px;
+}
+.userContainer{
+    display: flex;
+    flex-direction: row;
+}
+#styleBox{
+    border: solid 3px rgb(77, 76, 76);
+    background-color: rgb(94, 92, 92);
+    width: 100%
+}
