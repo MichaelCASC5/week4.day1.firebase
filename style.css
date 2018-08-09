@@ -4,6 +4,7 @@ body{
     align-items: left;
     height: 80vh;
     background: rgb(58, 57, 57);
+    /* font-family: Helvetica, sans-serif, "Trebuchet MS", Verdana, sans-serif; */
 }
 .singleInput{
     color: white;
@@ -27,7 +28,7 @@ h1{
     background-color: rgb(94, 94, 94);
     border: solid 5px rgb(114, 114, 114);
     overflow-y: scroll;
-    margin-top: 50px;
+    margin-top: 30px;
     min-height: 200px;
 }
 .allMessages>p {
@@ -41,6 +42,9 @@ p{
     color: white;
     margin: 1px;
 }
+p1{
+    color: rgb(206, 206, 206);
+}
 .userContainer{
     display: flex;
     flex-direction: row;
@@ -48,5 +52,8 @@ p{
 #styleBox{
     border: solid 3px rgb(77, 76, 76);
     background-color: rgb(94, 92, 92);
-    width: 100%
+    width: 100%;
+    /* overflow-x: scroll; */
+    overflow-y: scroll;
+    min-height: 98px;
 }

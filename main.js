@@ -45,6 +45,7 @@ let characterGen2 = Math.floor(Math.random()*26)
 let characterGen3 = Math.floor(Math.random()*26)
 let characterGen4 = Math.floor(Math.random()*26)
 randUser = letterArray[characterGen1] + letterArray[characterGen2] + letterArray[characterGen3] + letterArray[characterGen4]// + (Math.floor(Math.random()*10))
+usernameElement.innerHTML = "NOT ASSIGNED";
 function updateDB(event){
     event.preventDefault();
     let username        = randUser//usernameElement.value;
@@ -55,7 +56,7 @@ function updateDB(event){
     usernameElement.innerHTML = randUser;
     messageElement.value  = "";
 
-    console.log(username + " : " + message);
+    //console.log(username + " : " + message);
 
     //Update database here
     if(message =="/lenny"){
@@ -64,6 +65,14 @@ function updateDB(event){
         message = "( ͡°( ͡° ͜ʖ( ͡° ͜ʖ ͡°)ʖ ͡°) ͡°)"
     }else if(message =="/cool"){
         message = "(⌐■ ͜ʖ■)"
+    }else if(message =="/gun"){
+        message = " ̿ ̿'̿'̵͇̿з=(⌐■ʖ■)=ε/̵͇̿/'̿̿ ̿ ̿"
+    }else if(message =="/eyebrows"){
+        message = "( ̿ ̿ ̿ ̿ ̿ ̿ ̿ ̿°̿ ̿ ̿ ̿ ̿ ͜ʖ ̿ ̿ ̿ ̿ ̿ ̿ ̿°̿ ̿ ̿ ̿ ̿ ̿ ̿ )"
+    }else if(message =="/disapprove"){
+        message = "( ͡° ʖ̯ ͡°)"
+    }else if(message =="/shrug"){
+        message = "乁( ⁰͡ Ĺ̯ ⁰͡ ) ㄏ"
     }
     const value = {
         NAME:username,
