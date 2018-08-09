@@ -56,4 +56,9 @@ p1{
     /* overflow-x: scroll; */
     overflow-y: scroll;
     min-height: 98px;
+    /* flex-direction: column; */
+    flex-direction: column;
+}
+#bottom{
+    text-align: center;
 }
